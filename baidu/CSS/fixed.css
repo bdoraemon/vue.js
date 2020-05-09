@@ -1,0 +1,29 @@
+#fixed {
+    position: fixed;
+    top: 211px;
+    right: 0px;
+}
+
+#fixed_2,
+#fixed_3,
+#fixed_4 {
+    width: 44px;
+    height: 36px;
+    display: block;
+    border: 1px solid rgb(224 224 224);
+    border-width: 0px 0px 0px 0.5px;
+}
+
+#fixed_5 {
+    width: 44px;
+    height: 49px;
+    display: block;
+    border: 1px solid rgb(224 224 224);
+    border-width: 0px 0px 0px 0.5px;
+}
+
+#fixed_1 {
+    width: 44.5px;
+    height: 46px;
+    display: block;
+}

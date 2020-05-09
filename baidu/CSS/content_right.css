@@ -1,0 +1,269 @@
+#content_right {
+    width: 26%;
+    height: 100%;
+    float: left;
+    margin-top: 28px;
+}
+
+#content_right a img {
+    width: 272px;
+    height: 310px;
+    position: relative;
+    left: 17.5px;
+}
+
+#swiper {
+    width: 268px;
+    height: 39px;
+    position: relative;
+    left: 17.5px;
+    top: 14px;
+    border: 1px solid rgb(232, 232, 232);
+    border-width: 1px 1px 0px 1px;
+}
+
+#wiki,
+#hyper_3 {
+    display: inline-block;
+}
+
+#wiki {
+    position: relative;
+    left: 13.5px;
+    top: 8.5px;
+    font-size: 14px;
+}
+
+#hyper_3 a {
+    font-size: 12px;
+    color: rgb(102 102 102);
+    text-decoration: none;
+    position: relative;
+    left: 162px;
+    top: 6.5px;
+}
+
+#hyper_3 a:hover {
+    text-decoration: underline;
+}
+
+#swiper_2 {
+    width: 268px;
+    height: 152px;
+    border: 1px solid rgb(232 232 232);
+    border-width: 0px 1px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    top: 18px;
+    left: -1px;
+}
+
+#swiper_2 a img {
+    width: 268.5px;
+    height: 152px;
+    position: relative;
+    left: 0px;
+}
+
+#monney a img {
+    position: relative;
+    left: -1px;
+    top: 28px;
+    width: 270px;
+    height: 152px;
+}
+
+#census {
+    width: 266.5px;
+    height: 191.5px;
+    border: 1px solid rgb(230 230 230);
+    position: relative;
+    top: 34.5px;
+    left: -0.5px;
+    background-color: rgb(252 252 252);
+}
+
+#census_1 {
+    font-size: 11px;
+    margin-left: 13.5px;
+    color: rgb(133 133 133);
+}
+
+#census_2 {
+    margin-top: 14.5px;
+    font-size: 14px;
+    color: black;
+}
+
+#census_3 {
+    margin-top: 13.5px;
+}
+
+.census_3 {
+    margin-top: 8px;
+}
+
+#census_4 {
+    height: 1px;
+    width: 240px;
+    margin-top: 8px;
+    background-color: rgb(230 230 230);
+}
+
+#census_5 {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+#census_6 {
+    margin-top: 13px;
+}
+
+#census_6 a {
+    text-decoration: none;
+    color: rgb(133 133 133);
+}
+
+#census_6 a:hover {
+    text-decoration: underline;
+}
+
+.census_3 a {
+    text-decoration: none;
+    color: rgb(71 168 224);
+}
+
+.census_3 a:hover {
+    text-decoration: underline;
+}
+
+#swip {
+    position: relative;
+    width: 1615px;
+    height: 152px;
+}
+
+#Img_1 {
+    width: 268.5px;
+    height: 152px;
+    float: left;
+}
+
+#Img_2 {
+    width: 268px;
+    height: 152px;
+    float: left;
+}
+
+#Img_3 {
+    width: 268px;
+    height: 152px;
+    float: left;
+}
+
+#Img_4 {
+    width: 268px;
+    height: 152px;
+    float: left;
+}
+
+#Img_5 {
+    width: 268px;
+    height: 152px;
+    float: left;
+}
+
+#Img_6 {
+    width: 268px;
+    height: 152px;
+    float: left;
+}
+
+#circle {
+    height: 176.5px;
+    width: 2px;
+    background-color: rgb(234 234 234);
+    position: fixed;
+    left: 940px;
+    top: 394px;
+}
+
+#WORD {
+    position: fixed;
+    left: 963.5px;
+    top: 398px;
+}
+
+#circle_1 {
+    position: relative;
+    top: -15px;
+    left: -5px;
+}
+
+#circle_2 {
+    left: -2.5px;
+    position: relative;
+    top: -18px;
+}
+
+#circle_3 {
+    left: -2.5px;
+    position: relative;
+    top: -14.5px;
+}
+
+#circle_4 {
+    left: -2.5px;
+    position: relative;
+    top: -11.5px;
+}
+
+#circle_5 {
+    left: -2.5px;
+    position: relative;
+    top: -8px;
+}
+
+#circle_6 {
+    position: relative;
+    top: 59px;
+    left: -4.5px;
+}
+
+#Circle_1,
+#Circle_2,
+#Circle_3,
+#Circle_4,
+#Circle_5,
+#Circle_6 {
+    display: inline-block;
+}
+
+.WORD {
+    margin-top: 7px;
+}
+
+.circle_four img {
+    width: 8px;
+    height: 8px;
+}
+
+#Circle_1,
+#Circle_6 {
+    width: 10.5px;
+    height: 10.5px;
+}
+
+#WORD_2,
+#WORD_3,
+#WORD_4,
+#WORD_5 {
+    width: 100px;
+    font-size: 14px;
+}
+
+#WORD_2 a,
+.WORD a {
+    color: rgb(102 102 102);
+    text-decoration: none;
+}
