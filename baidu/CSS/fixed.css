@@ -4,6 +4,12 @@
     right: 0px;
 }
 
+#WORD {
+    position: fixed;
+    left: 963.5px;
+    top: 398px;
+}
+
 #fixed_2,
 #fixed_3,
 #fixed_4 {

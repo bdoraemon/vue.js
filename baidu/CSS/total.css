@@ -193,3 +193,36 @@
     text-align: center;
     margin-top: 15.5px;
 }
+
+.Index {
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    left: -4px;
+}
+
+.Index a {
+    color: rgb(51 102 231);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+#five {
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    left: 55px;
+}
+
+#five_1 {
+    display: inline-block;
+    position: relative;
+    top: 7px;
+    left: -8px;
+}
+
+#five a {
+    color: rgb(51 102 231);
+    text-decoration: none;
+    font-size: 10px;
+}

@@ -1,48 +1,31 @@
 window.onload = function() {
     var see = document.getElementById('see_left');
-    var timer = document.getElementById('see_left');
     var HD = document.getElementById('hidden');
-    // var timer, div1 = document.getElementById("show");
-    // div1.onmouseover = function() {
-    //     timer = setTimeout(function() {
-    //         document.getElementById("content").style.display = 'block'
-    //     }, 1000);
-    // }
-    // div1.onmouseout = function() {
-    //         clearTimeout(timer);
-    //         document.getElementById("content").style.display = 'none';
-    //     }
-    // var time = setInterval(() => {
-    see.onmouseover = () => {
-        timer = setTimeout(() => {
+    see.onmousemove = () => { //显示导航栏的隐藏元素
+        var timer = setTimeout(() => {
             HD.style.display = 'block';
-        }, 500);
-        for (var h = 1; h < 7; h++) {
-            var Child = document.getElementById('child_' + h);
-            Child.style.backgroundColor = 'rgb(69,157,245)';
-        }
-        clearTimeout(timer);
-        // if (HD.style.display == 'block')
-        // clearInterval(time);
-        // see.style.backgroundColor = "rgb(69,157,245)";
+        }, 400);
+        if (HD.style.display == 'block')
+            clearTimeout(timer);
     }
-
-    // }, 20)
     var total = document.getElementById('total');
-    total.onmouseout = () => {
-        // clearTimeout(timer);
-        var time = setTimeout(() => {
-            HD.style.display = 'none';
+
+
+
+    total.onmouseleave = () => { //隐藏
+        var time = setInterval(() => {
+            if (HD.style.display == 'block') {
+                HD.style.display = 'none';
+                clearInterval(time);
+            }
             for (var h = 1; h < 7; h++) {
                 var Child = document.getElementById('child_' + h);
                 Child.style.backgroundColor = 'rgb(69,157,245)';
             }
-        }, 50);
-        if (HD.style.display == 'none')
-            clearTimeout(time);
+        }, 500);
     };
 
-    for (var i = 1; i < 7; i++) {
+    for (var i = 1; i < 7; i++) { //对于隐藏div的样式修改
         var hide = document.getElementById('hide_' + i);
         var child = document.getElementById('child_' + i);
         hide.onmousemove = child.onmousemove = ((i) => {
@@ -153,7 +136,7 @@ window.onload = function() {
 
 
 
-    for (var i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) { //实现图片的动态切换
         let icon = document.getElementById('icon_' + i); //let 块级作用域
         icon.onmouseleave = icon.onmouseenter = () => {
             var src = icon.getAttribute('src');
@@ -190,10 +173,8 @@ window.onload = function() {
         var src = vedio.getAttribute('src');
         if (src.indexOf('2') != -1) {
             src = src.replace('2', '1');
-            // console.log(src);
         } else if (src.indexOf('1') != -1) {
             src = src.replace('1', '2');
-            // console.log(src);
         }
         vedio.src = src;
     }
@@ -246,7 +227,7 @@ window.onload = function() {
                 circle.src = src;
             }
     }
-    for (var i = 1; i <= 5; i++) {
+    for (var i = 1; i <= 5; i++) { //图片的动态切换
         let fixed = document.getElementById('fixed_' + i);
         fixed.onmouseenter = fixed.onmouseleave = () => {
             var src = fixed.getAttribute('src');
@@ -261,6 +242,7 @@ window.onload = function() {
     var Fixed_0 = document.getElementById('WORD');
     var Fixed_1 = document.getElementById('circle');
     var top_9 = Fixed_0.offsetTop;
+    var flag = 0;
     window.onscroll = () => {
 
         var direct = document.getElementById('direct');
@@ -269,13 +251,31 @@ window.onload = function() {
         var circle_4 = document.getElementById('Circle_4');
         var circle_5 = document.getElementById('Circle_5');
         var Content = document.getElementById('content');
+        var h = parseInt(Content.getBoundingClientRect().top);
+        // console.log(h);
+        var three = document.getElementById('toptop');
+        if (h < 0) {
+            // console.log("大于0");
+            three.style.display = 'block';
+            three.style.left = '0px';
+            three.style.top = '-20px';
+        } else if (h > 0) {
+            three.style.display = 'none';
+            // console.log("小于0");
+        }
 
+
+
+
+
+
+        var top_3 = parseInt(direct.getBoundingClientRect().top);
         var top_0 = parseInt(window.innerHeight - Content.getBoundingClientRect().bottom);
         if (top_0 >= 0) {
             Fixed_0.style.top = top_9 - top_0 + 'px';
             Fixed_1.style.top = top_9 - top_0 + 'px'; //改变fixed位置
         }
-        var top_3 = parseInt(direct.getBoundingClientRect().top);
+        var top_3 = parseInt(direct.getBoundingClientRect().top); //下方导航栏图标的动态改变，以及相应的图标样式修改
         if (top_3 > 0) {
             WORD.style.display = 'none';
         } else if (top_3 <= 0) {
@@ -303,34 +303,72 @@ window.onload = function() {
                 circle_4.style.position = 'relative';
                 circle_4.style.width = '8px';
                 circle_4.style.height = '8px';
-                circle_4.style.left = '0px';
+                circle_4.style.left = '0px'; //将图标从3 4之间切换
             }
         }
     }
     var TOP_TOP = document.getElementById("TOP_TOP_1");
     TOP_TOP.onmouseover = () => {
-        var TP = document.getElementById("TOP_TOP");
-        TP.style.display = 'block';
-
-        TP.onmousemove = () => {
-            for (var i = 1; i <= 4; i++) {
-                let colour = document.getElementById('colour_' + i);
-                colour.onmouseleave = colour.onmouseenter = () => {
-                    var src = colour.getAttribute('src');
-                    if (src.indexOf('1') != -1) {
-                        src = src.replace('1', '2');
-                    } else if (src.indexOf('2') != -1) {
-                        src = src.replace('2', '1');
+            var TP = document.getElementById("TOP_TOP");
+            TP.style.display = 'block';
+            //将点赞与收藏处所隐藏的div显示，并进行图片的动态切换
+            TP.onmousemove = () => {
+                for (var i = 1; i <= 4; i++) {
+                    let colour = document.getElementById('colour_' + i);
+                    colour.onmouseleave = colour.onmouseenter = () => {
+                        var src = colour.getAttribute('src');
+                        if (src.indexOf('1') != -1) {
+                            src = src.replace('1', '2');
+                        } else if (src.indexOf('2') != -1) {
+                            src = src.replace('2', '1');
+                        }
+                        colour.src = src;
                     }
-                    colour.src = src;
                 }
             }
-        }
-        var Place_top = document.getElementById('place_top');
-        Place_top.onmouseleave = TP.onmouseleave = () => {
-            TP.style.display = 'none';
-        }
+            var Place_top = document.getElementById('place_top');
+            Place_top.onmouseleave = TP.onmouseleave = () => {
+                TP.style.display = 'none';
+            }
 
+        }
+        //对第一层div所隐藏div进行显示
+    var infor_1 = document.getElementById('infor_1');
+    var dream_1 = document.getElementById('dream_1');
+    var set_1 = document.getElementById('set_1');
+    var infor = document.getElementById('infor');
+    var dream = document.getElementById('dream');
+    var set = document.getElementById('set');
+    infor.onmousemove = () => {
+        infor_1.style.display = 'block';
     }
+    dream.onmousemove = () => {
+        dream_1.style.display = 'block';
+    }
+    set.onmousemove = () => {
+        set_1.style.display = 'block';
+    }
+    infor.onmouseleave = () => {
+        infor_1.style.display = 'none';
+    }
+    dream.onmouseleave = () => {
+        dream_1.style.display = 'none';
+    }
+    set.onmouseleave = () => {
 
+
+        set_1.style.display = 'none';
+    }
+    for (var i = 1; i < 5; i++) {
+        let SRC = document.getElementById("src_" + i);
+        SRC.onmouseenter = SRC.onmouseout = () => {
+            var src = SRC.getAttribute('src');
+            if (src.indexOf('1') != -1) {
+                src = src.replace('1', '2');
+            } else if (src.indexOf('2') != -1) {
+                src = src.replace('2', '1');
+            }
+            SRC.src = src;
+        }
+    }
 }

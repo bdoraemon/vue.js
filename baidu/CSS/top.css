@@ -1,0 +1,304 @@
+#Top_1 {
+    float: left;
+    width: 30%;
+    height: 100%;
+}
+
+#Top_2 {
+    float: left;
+    width: 70%;
+    height: 100%;
+}
+
+#Top_0 {
+    width: 100%;
+    height: 31.5px;
+    border: 1px solid rgb(235 235 235);
+    border-width: 0px 0px 1px 0px;
+    background-color: white;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#Top_2 a {
+    color: black;
+    font-size: 13px;
+    margin-left: 19px;
+    position: relative;
+    top: 0.5px;
+}
+
+#Top_3 {
+    display: inline-block;
+}
+
+#Top_4 {
+    display: inline-block;
+    width: 0.5px;
+    height: 15px;
+    background-color: rgb(235 235 235);
+    margin-left: 20px;
+    position: relative;
+    top: 6px;
+}
+
+#Top_5 {
+    display: inline-block;
+}
+
+#Top_5 a {
+    text-decoration: none;
+    color: rgb(51 51 143);
+}
+
+#Top_5 a:hover {
+    text-decoration: underline;
+}
+
+#btn_1 {
+    background-color: rgb(51 136 255);
+    color: white;
+    border: none;
+    height: 40.5px;
+    width: 105px;
+    font-size: 17px;
+    margin-left: -6px;
+    position: relative;
+    top: 2.5px;
+}
+
+#btn_2 {
+    background-color: white;
+    height: 40.5px;
+    width: 105px;
+    outline: none;
+    border: 1px solid rgb(51 136 255);
+    font-size: 17px;
+    position: relative;
+    top: 2.5px;
+}
+
+#btn_1 a {
+    text-decoration: none;
+    color: white;
+}
+
+#btn_2 a {
+    text-decoration: none;
+    color: rgb(51 136 255);
+}
+
+#href_9 {
+    color: black;
+    font-size: 13px;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    left: 8px;
+}
+
+#input {
+    border: 1px solid rgb(204 204 204);
+    outline: none;
+    width: 432px;
+    height: 38px;
+    padding: 0px 4px;
+}
+
+#input:focus {
+    border: 1px solid rgb(51 136 255);
+}
+
+#baike {
+    width: 162px;
+    height: 59px;
+    position: relative;
+    top: 22px;
+    left: -3.5px;
+}
+
+#bird {
+    width: 162px;
+    height: 59px;
+    position: relative;
+    top: 30px;
+    left: 20px;
+}
+
+#words {
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 107.5px;
+}
+
+#dream,
+#infor,
+#set,
+#mall {
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(51 51 143);
+    position: relative;
+    top: 0px;
+    margin-left: -3px;
+}
+
+#dream a,
+#infor a,
+#set a,
+#mall a {
+    display: inline;
+    text-decoration: none;
+}
+
+#dream a:hover,
+#infor a:hover,
+#set a:hover,
+#mall a:hover {
+    text-decoration: underline;
+}
+
+.P_Q {
+    width: 10px;
+    height: 10px;
+}
+
+#settings {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 6px;
+}
+
+#words_1 {
+    position: absolute;
+    left: 217px;
+}
+
+#dream_1 {
+    position: absolute;
+    z-index: 3;
+    left: 14px;
+    top: 20px;
+    display: none;
+}
+
+#dream_1 img {
+    width: 73px;
+    height: 157px;
+}
+
+#infor_1 {
+    position: absolute;
+    z-index: 3;
+    left: 14px;
+    top: 18.5px;
+    display: none;
+}
+
+#infor_1 img {
+    width: 48px;
+    height: 61px;
+}
+
+#set_1 {
+    position: absolute;
+    z-index: 3;
+    left: 14px;
+    top: 24.5px;
+    display: none;
+}
+
+#set_1 img {
+    width: 72px;
+    height: 108px;
+}
+
+#toptop {
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    display: none;
+    left: 0px;
+    top: -20px;
+    background-color: white;
+    height: 85px;
+    border: 1px solid rgb(235 235 235);
+    border-width: 0px 0px 1px 0px;
+    box-shadow: 10px 0px 5px rgb(110 110 110);
+}
+
+#three_1 {
+    display: inline-block;
+    width: 50%;
+}
+
+#three_1 img {
+    width: 119px;
+    height: 48px;
+    position: relative;
+    top: 18.5px;
+    left: 4px;
+}
+
+#btn_3 {
+    background-color: rgb(51 136 255);
+    color: white;
+    border: none;
+    height: 34px;
+    width: 105px;
+    margin-left: -6px;
+    position: relative;
+    top: 1px;
+    outline: none;
+    font-size: 14px;
+}
+
+#toptop input {
+    border: 1px solid rgb(204 204 204);
+    outline: none;
+    width: 391px;
+    height: 31.5px;
+    padding: 0px 4px;
+    /* font-size: 13px; */
+}
+
+#three_5 {
+    position: relative;
+    left: 53px;
+    display: inline-block;
+    top: 9px;
+}
+
+#three_6 {
+    position: relative;
+    left: 207px;
+    display: inline-block;
+    top: 9px;
+}
+
+#src_1,
+#src_2,
+#src_3,
+#src_4 {
+    width: 49px;
+    height: 17px;
+    display: inline-block;
+    margin-left: 23px;
+}
+
+#attend {
+    display: inline-block;
+    margin-left: 30px;
+    position: relative;
+    top: -5px;
+}
+
+#attend a {
+    color: rgb(146 146 146);
+    font-size: 14px;
+}

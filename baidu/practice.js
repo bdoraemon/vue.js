@@ -1,3 +1,4 @@
+// 本地服务器搭建，端口号为1000, 开放baidu文件，允许被访问
 var express = require("express");
 var app = express();
 app.get('/', function(req, res) {
